@@ -1,6 +1,6 @@
-﻿using DiaryPetProjectDomain.Interfaces;
+﻿using DiaryPetProject.Domain.Interfaces;
 
-namespace DiaryPetProjectDomain.Entity;
+namespace DiaryPetProject.Domain.Entity;
 
 public class User : IEntityId<long>, IAuditable
 {

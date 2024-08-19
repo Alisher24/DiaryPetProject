@@ -1,6 +1,6 @@
-﻿namespace DiaryPetProjectDomain.Interfaces;
+﻿namespace DiaryPetProject.Domain.Interfaces;
 
-internal interface IAuditable
+public interface IAuditable
 {
     public DateTime CreatedAt { get; set; }
 

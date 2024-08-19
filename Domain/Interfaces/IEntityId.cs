@@ -1,4 +1,4 @@
-﻿namespace DiaryPetProjectDomain.Interfaces;
+﻿namespace DiaryPetProject.Domain.Interfaces;
 
 public interface IEntityId<T> where T : struct
 {

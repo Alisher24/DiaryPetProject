@@ -11,7 +11,9 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Infrastructure", "Infrastru
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DiaryPetProject.Api", "DiaryPetProject.Api\DiaryPetProject.Api.csproj", "{CF426D3F-D864-4759-B174-607F0C9A0A97}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DiaryPetProjectDomain", "Domain\DiaryPetProjectDomain.csproj", "{25C00A07-277B-4732-ADC9-89A34D1BA878}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DiaryPetProject.Domain", "Domain\DiaryPetProject.Domain.csproj", "{25C00A07-277B-4732-ADC9-89A34D1BA878}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DiaryPetProject.DAL", "DiaryPetProject.DAL\DiaryPetProject.DAL.csproj", "{1793C85B-E486-4F4A-8A9C-8E632ADBDFF7}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -27,6 +29,10 @@ Global
 		{25C00A07-277B-4732-ADC9-89A34D1BA878}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{25C00A07-277B-4732-ADC9-89A34D1BA878}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{25C00A07-277B-4732-ADC9-89A34D1BA878}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1793C85B-E486-4F4A-8A9C-8E632ADBDFF7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1793C85B-E486-4F4A-8A9C-8E632ADBDFF7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1793C85B-E486-4F4A-8A9C-8E632ADBDFF7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1793C85B-E486-4F4A-8A9C-8E632ADBDFF7}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -34,6 +40,7 @@ Global
 	GlobalSection(NestedProjects) = preSolution
 		{CF426D3F-D864-4759-B174-607F0C9A0A97} = {2DA9A6D2-A156-4DCC-B4F9-5841BDF473FE}
 		{25C00A07-277B-4732-ADC9-89A34D1BA878} = {69A958DE-BFE6-4EE0-95DD-4DE8706A1F2D}
+		{1793C85B-E486-4F4A-8A9C-8E632ADBDFF7} = {B42D57BA-E11D-4380-A5E9-EB4378BC2057}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {CA8EFB4D-C840-41AB-B62E-F6A611B24B17}
