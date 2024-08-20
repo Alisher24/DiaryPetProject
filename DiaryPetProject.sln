@@ -9,11 +9,13 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Presentation", "Presentatio
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Infrastructure", "Infrastructure", "{B42D57BA-E11D-4380-A5E9-EB4378BC2057}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DiaryPetProject.Api", "DiaryPetProject.Api\DiaryPetProject.Api.csproj", "{CF426D3F-D864-4759-B174-607F0C9A0A97}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DiaryPetProject.Api", "DiaryPetProject.Api\DiaryPetProject.Api.csproj", "{CF426D3F-D864-4759-B174-607F0C9A0A97}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DiaryPetProject.Domain", "Domain\DiaryPetProject.Domain.csproj", "{25C00A07-277B-4732-ADC9-89A34D1BA878}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DiaryPetProject.Domain", "Domain\DiaryPetProject.Domain.csproj", "{25C00A07-277B-4732-ADC9-89A34D1BA878}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DiaryPetProject.DAL", "DiaryPetProject.DAL\DiaryPetProject.DAL.csproj", "{1793C85B-E486-4F4A-8A9C-8E632ADBDFF7}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DiaryPetProject.DAL", "DiaryPetProject.DAL\DiaryPetProject.DAL.csproj", "{1793C85B-E486-4F4A-8A9C-8E632ADBDFF7}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DiaryPetProject.Application", "DiaryPetProject.Application\DiaryPetProject.Application.csproj", "{3500B0FE-C1FB-499E-89D8-7D4ACBBF48DA}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -33,6 +35,10 @@ Global
 		{1793C85B-E486-4F4A-8A9C-8E632ADBDFF7}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{1793C85B-E486-4F4A-8A9C-8E632ADBDFF7}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{1793C85B-E486-4F4A-8A9C-8E632ADBDFF7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3500B0FE-C1FB-499E-89D8-7D4ACBBF48DA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3500B0FE-C1FB-499E-89D8-7D4ACBBF48DA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3500B0FE-C1FB-499E-89D8-7D4ACBBF48DA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3500B0FE-C1FB-499E-89D8-7D4ACBBF48DA}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -41,6 +47,7 @@ Global
 		{CF426D3F-D864-4759-B174-607F0C9A0A97} = {2DA9A6D2-A156-4DCC-B4F9-5841BDF473FE}
 		{25C00A07-277B-4732-ADC9-89A34D1BA878} = {69A958DE-BFE6-4EE0-95DD-4DE8706A1F2D}
 		{1793C85B-E486-4F4A-8A9C-8E632ADBDFF7} = {B42D57BA-E11D-4380-A5E9-EB4378BC2057}
+		{3500B0FE-C1FB-499E-89D8-7D4ACBBF48DA} = {69A958DE-BFE6-4EE0-95DD-4DE8706A1F2D}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {CA8EFB4D-C840-41AB-B62E-F6A611B24B17}

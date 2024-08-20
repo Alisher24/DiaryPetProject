@@ -10,7 +10,7 @@ namespace DiaryPetProject.DAL.DependencyInjection;
 
 public static class DependencyInjection
 {
-    public static void AddDataAccesssLayer(this IServiceCollection services, IConfiguration configuration)
+    public static void AddDataAccessLayer(this IServiceCollection services, IConfiguration configuration)
     {
         var connectionString = configuration.GetConnectionString("MSSQL");
 
