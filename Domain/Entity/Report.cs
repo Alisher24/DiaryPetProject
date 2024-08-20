@@ -10,7 +10,7 @@ public class Report : IEntityId<long>, IAuditable
 
     public required string Description { get; set; }
 
-    public required User User { get; set; }
+    public User User { get; set; }
 
     public long UserId { get; set; }
 
