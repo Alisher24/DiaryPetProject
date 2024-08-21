@@ -11,6 +11,7 @@
   </ItemGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\DiaryPetProject.Application\DiaryPetProject.Application.csproj" />
     <ProjectReference Include="..\DiaryPetProject.DAL\DiaryPetProject.DAL.csproj" />
   </ItemGroup>
 

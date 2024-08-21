@@ -17,14 +17,14 @@ public class ReportService(
     IBaseRepository<User> userRepository, 
     IReportValidator reportValidator, 
     IMapper mapper,
-    ILogger logger) 
+    ILogger<ReportService> logger) 
     : IReportService
 {
     private readonly IBaseRepository<Report> _reportRepository = reportRepository;
     private readonly IBaseRepository<User> _userRepository = userRepository;
     private readonly IReportValidator _reportValidator = reportValidator;
     private readonly IMapper _mapper = mapper;
-    private readonly ILogger _logger = logger;
+    private readonly ILogger<ReportService> _logger = logger;
 
     /// <inheritdoc />
     public async Task<BaseResult<ReportDto>> CreateReportAsync(CreateReportDto dto)
