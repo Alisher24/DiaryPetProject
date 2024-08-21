@@ -7,17 +7,17 @@ public class BaseRepository<TEntity>(ApplicationDbContext dbContext)
 {
     private readonly ApplicationDbContext _dbContext = dbContext;
 
-    public Task<TEntity> CreateAsync(TEntity entity)
+    public async Task<TEntity> CreateAsync(TEntity entity)
     {
         if (entity == null)
         {
             throw new ArgumentNullException("Entity is null");
         }
 
-        _dbContext.Add(entity);
-        _dbContext.SaveChanges();
+        await _dbContext.AddAsync(entity);
+        await _dbContext.SaveChangesAsync();
 
-        return Task.FromResult(entity);
+        return entity;
     }
 
     public IQueryable<TEntity> GetAll()
@@ -25,7 +25,7 @@ public class BaseRepository<TEntity>(ApplicationDbContext dbContext)
         return _dbContext.Set<TEntity>();
     }
 
-    public Task<TEntity> RemoveAsync(TEntity entity)
+    public async Task<TEntity> RemoveAsync(TEntity entity)
     {
         if (entity == null)
         {
@@ -33,12 +33,12 @@ public class BaseRepository<TEntity>(ApplicationDbContext dbContext)
         }
 
         _dbContext.Remove(entity);
-        _dbContext.SaveChanges();
+        await _dbContext.SaveChangesAsync();
 
-        return Task.FromResult(entity);
+        return entity;
     }
 
-    public Task<TEntity> UpdateAsync(TEntity entity)
+    public async Task<TEntity> UpdateAsync(TEntity entity)
     {
         if (entity == null)
         {
@@ -46,8 +46,8 @@ public class BaseRepository<TEntity>(ApplicationDbContext dbContext)
         }
 
         _dbContext.Update(entity);
-        _dbContext.SaveChanges();
+        await _dbContext.SaveChangesAsync();
 
-        return Task.FromResult(entity);
+        return entity;
     }
 }

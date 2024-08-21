@@ -6,15 +6,18 @@ namespace DiaryPetProject.DAL.Interceptors;
 
 public class DateInterceptor : SaveChangesInterceptor
 {
-    public override InterceptionResult<int> SavingChanges(DbContextEventData eventData, InterceptionResult<int> result)
+    public override ValueTask<InterceptionResult<int>> SavingChangesAsync(DbContextEventData eventData, 
+        InterceptionResult<int> result, CancellationToken cancellationToken = default)
     {
         var dbContext = eventData.Context;
         if (dbContext == null)
         {
-            return base.SavingChanges(eventData, result);
+            return base.SavingChangesAsync(eventData, result, cancellationToken);
         }
 
-        var entries = dbContext.ChangeTracker.Entries<IAuditable>();
+        var entries = dbContext.ChangeTracker.Entries<IAuditable>()
+            .Where(x => x.State == EntityState.Added || x.State == EntityState.Modified);
+         
         foreach (var entry in entries)
         {
             //Adding creation time
@@ -29,6 +32,6 @@ public class DateInterceptor : SaveChangesInterceptor
                 entry.Property(x => x.UpdatedAt).CurrentValue = DateTime.UtcNow;
             }
         }
-        return base.SavingChanges(eventData, result);
+        return base.SavingChangesAsync(eventData, result, cancellationToken);
     }
 }
