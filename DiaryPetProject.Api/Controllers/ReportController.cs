@@ -1,13 +1,17 @@
-﻿using DiaryPetProject.Domain.Dto.Report;
+﻿using Asp.Versioning;
+using DiaryPetProject.Domain.Dto.Report;
 using DiaryPetProject.Domain.Entity;
 using DiaryPetProject.Domain.Interfaces.Services;
 using DiaryPetProject.Domain.Result;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 
 namespace DiaryPetProject.Api.Controllers;
 
+[Authorize]
 [ApiController]
-[Route("api/v1/[controller]")]
+[ApiVersion("1.0")]
+[Route("api/v{version:apiVersion}/[controller]")]
 public class ReportController(IReportService reportService) : ControllerBase
 {
     private readonly IReportService _reportService = reportService;
