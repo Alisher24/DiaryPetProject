@@ -120,6 +120,9 @@
   <data name="InternalServerError" xml:space="preserve">
     <value>Internal Server Error</value>
   </data>
+  <data name="PasswordNotEqualsPasswordConfirm" xml:space="preserve">
+    <value>Password Not Equals Password Confirm</value>
+  </data>
   <data name="ReportAlreadyExists" xml:space="preserve">
     <value>Report Already Exists</value>
   </data>
@@ -128,6 +131,9 @@
   </data>
   <data name="ReportsNotFound" xml:space="preserve">
     <value>Reports Not Found</value>
+  </data>
+  <data name="UserAlreadyExists" xml:space="preserve">
+    <value>User Already Exists</value>
   </data>
   <data name="UserNotFound" xml:space="preserve">
     <value>User Not Found</value>

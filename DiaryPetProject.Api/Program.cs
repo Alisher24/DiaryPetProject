@@ -1,10 +1,15 @@
 using DiaryPetProject.DAL.DependencyInjection;
 using DiaryPetProject.Application.DependencyInjection;
 using DiaryPetProject.Api;
+using DiaryPetProject.Domain.Settings;
 
 var builder = WebApplication.CreateBuilder(args);
 
+builder.Services.Configure<JwtSettings>(builder.Configuration.GetSection(JwtSettings.DefaultSection));
+
 builder.Services.AddControllers();
+
+builder.Services.AddAuthentificationAndAuthorization(builder);
 builder.Services.AddSwagger();
 
 builder.Services.AddDataAccessLayer(builder.Configuration);
